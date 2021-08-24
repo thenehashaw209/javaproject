@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: green;
+        }
+        #div{
+            width: 300px;
+            height: 270px;
+            background-color: greenyellow;
+            position: absolute;
+            top: 28%;
+            left: 35%;
+            box-sizing: border-box;
+        }
+        #heading{
+            padding-left: 20px;
+        }
+        #textarea{
+            width: 250px;
+            height: 100px;
+            margin-left: 20px;
+            font-size:9px ;
+        }
+        #paragraph{
+            padding-left: 20px;
+            font-size: 15px;
+        }
+        #h3{
+        position: absolute;
+        bottom:20px;
+        right: 2px;
+        margin-left: 10px;
+        font-size: 20px;
+        }
+    
+        
+
+    </style>
+</head>
+<body>
+<div id="div">
+    <h2 id="heading">Live Character Counter</h2>
+    <textarea type ="text" placeholder="write your text here so that it can be counted note that the space will also be counted.😋" 
+    id="textarea" onkeyup="keypress(this.value)"></textarea>
+    <p id="paragraph">Total Character you typed including space:</p>
+    <h3 id="h3">0</h3>
+    </div>
+    <script>
+        document.getElementById("h3").style.color="green";
+        function keypress(str){
+        var lng = str.length;
+         document.getElementById("h3").innerHTML=lng;
+         }
+         
+
+        
+    
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: aqua;
+        }
+        #one{
+            text-align: center;
+            position: absolute;
+            top: 30%;
+            left: 37%;
+            font-weight: bold;
+            }
+        #one:hover{
+            color:indigo
+        }
+        #two{
+            position: absolute;
+            top: 39%;
+            left: 48%;
+        }
+        #three{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 15%;
+            height: 5%;
+            border-style: solid;
+            border-color: red;
+            border-width: thin;
+            color:white;
+            font-size: 15px;
+            background-color: rgb(61, 47, 47);
+            font-weight: bold;
+            border-radius: 5px 0px 5px 0px;
+        }
+        #three:hover{
+            color: yellow;
+            background-color: rgb(124, 99, 99);
+        }
+        #four{
+            position: absolute;
+            top: 50%;
+            left: 33%;
+            width: 15%;
+            height: 5%;
+            border-style: solid;
+            border-color: red;
+            border-width: thin;
+            color: white;
+            font-size: 15px;
+            background-color: rgb(61, 47, 47);
+            font-weight: bold;
+            border-radius: 5px 0px 5px 0px;
+         }
+         #four:hover{
+            color: yellow;
+            background-color: rgb(124, 99, 99);
+         }
+
+    </style>
+</head>
+<body>
+    <h1 id="one">JavaScript Counter</h1>
+    <h2 id="two">0</h2>
+    <button id="three" onclick="increase()">increase counter</button>
+    <button id="four" onclick="decrease()">decreases counter</button>
+    <script>
+        let a = 0;
+      document.getElementById("two").innerHTML=a; 
+      document.getElementById("two").style.color="red"; 
+        
+    function increase(){
+        a += 1 ;    
+        
+        document.getElementById("two").innerHTML=a;
+    }
+          
+        function decrease(){
+            a -= 1;
+            document.getElementById("two").innerHTML=a;
+        }
+
+        
+
+            
+            
+        
+        
+
+    </script>
+    
+      
+       
+</body>
+</html>
